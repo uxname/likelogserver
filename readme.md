@@ -1,9 +1,9 @@
 Likelog server
 ======
 
-**Likelog** - The Frontend Logging Framework for JavaScript
+[**Likelog**](https://github.com/uxname/likelog) - The Frontend Logging Framework for JavaScript
  
-**Likelog server** - Backend part for receiving logs from Likelog
+[**Likelog server**](https://github.com/uxname/likelogserver) - Backend part for receiving logs from Likelog
 
 ## Usage
 
