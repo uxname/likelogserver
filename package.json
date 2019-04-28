@@ -1,18 +1,17 @@
 {
-  "name": "test_uxlogger_backend",
+  "name": "likelogserver",
   "author": "uxname",
   "version": "0.0.1",
-  "description": "Backend logger service for uxlogger.js",
-  "main": "index.js",
+  "description": "Backend logger service for Likelog",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node test.js",
-    "nodemon": "npx nodemon test.js"
+    "start": "node test/test.js",
+    "nodemon": "npx nodemon test/test.js"
   },
   "license": "MIT",
   "dependencies": {
-    "fastify": "^2.2.0",
-    "fastify-compress": "^0.8.1",
-    "fastify-cors": "^2.1.2"
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "nodemon": "^1.18.11"
