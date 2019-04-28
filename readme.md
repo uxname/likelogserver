@@ -2,7 +2,7 @@ Likelog server
 ======
 
 **Likelog** - The Frontend Logging Framework for JavaScript 
-**Likelog server** - backend part for receiving logs from Likelog
+**Likelog server** - Backend part for receiving logs from Likelog
 
 ## Usage
 
@@ -19,7 +19,7 @@ or
 **As express js middleware:**
 
 ```javascript
-const Likelog = require('../src');
+const Likelog = require('likelogserver');
 const express = require('express');
 const app = express();
 const PORT = 5111;
