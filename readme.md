@@ -44,3 +44,27 @@ app.listen(PORT, function () {
     console.log(`Example app listening on port ${PORT}!`);
 });
 ```
+
+Output example:
+
+```javascript
+console.log(JSON.stringify(logs, null, 2))
+```
+
+```json
+[
+  {
+    "uuid": "ea3bde8b-c58f-4f79-b3c2-efcf8cedf6f8",
+    "level": "trace",
+    "name": "App",
+    "customPrefix": "Server prefix",
+    "date": 1556482468436,
+    "values": [
+      "Test trace log",
+      {
+        "test": "log_trace"
+      }
+    ]
+  }
+]
+```
