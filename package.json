@@ -1,9 +1,13 @@
 {
   "name": "likelogserver",
   "author": "uxname",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Backend logger service for Likelog",
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uxname/likelogserver"
+  },
   "scripts": {
     "start": "node test/test.js",
     "nodemon": "npx nodemon test/test.js"
