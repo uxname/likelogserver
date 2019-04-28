@@ -1,7 +1,7 @@
 {
   "name": "likelogserver",
   "author": "uxname",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Backend logger service for Likelog",
   "main": "src/index.js",
   "repository": {
