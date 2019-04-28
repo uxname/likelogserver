@@ -6,7 +6,7 @@ function applyMiddleware(express, path = '/log', fn) {
     express.use(path, cors());
     express.post(path, async (req, res, next) => {
         try {
-            await fn(req.body);
+            await fn(req.body, req, res);
         } catch (e) {
             return res.json({
                 result: 'error'

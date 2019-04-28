@@ -11,12 +11,14 @@ app.get('/', function (req, res) {
     });
 });
 
-Likelog.applyMiddleware(app, '/log', async logs => {
+Likelog.applyMiddleware(app, '/log', async (logs, req) => {
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+
     logsDb.push(
         ...logsDb,
         ...logs
     );
-    console.log('New logs received:', JSON.stringify(logs, null, 2));
+    console.log(`New logs received (ip:${ip}): ${JSON.stringify(logs, null, 2)}`);
 });
 
 app.listen(PORT, function () {
